@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.css')}}">
+   
+        <!-- main css -->
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/responsive.css')}}">
+</head>
+<body>
+    <section class="home_banner_area">
+        <div class="container box_1620">
+            <div class="banner_inner d-flex align-items-center">
+             <div class="banner_content">
+                 <div class="media">
+                    
+                         <img src="{{url_for('static',filename='user1.jpg')}}" height="100" alt="">
+
+                     <div class="media-body">
+                         <div class="personal_text">
+                             <h6>Hello Everybody, i am</h6>
+                             <h3>{{card.fname}} {{card.lname}}</h3>
+                             <h4>Junior UI/UX Developer</h4>
+                             <p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
+                             <ul class="list basic_info">
+                                 <li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li>
+                                 <li><a href="tel:{{card.phone}}"><i class="fas fa-phone"></i> {{card.phone}}</a></li>
+                                 <li><a href="mailto:{{card.email}}?cc=meetyourvallabh@gmail.com, kaushalpp01@gmail.com, &bcc=lastemail@example.com&subject=Inquiry mail&body=Hi, I want to discuss something with you."><i class="lnr lnr-envelope"></i> {{card.email}}</a></li>
+                                 <li><a href="#"><i class="lnr lnr-home"></i> {{card.address}}</a></li>
+                             </ul>
+                             <ul class="list personal_social">
+                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+    
+</body>
+</html>

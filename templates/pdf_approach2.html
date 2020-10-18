@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+
+  color: black;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+
+.name {
+  position: absolute;
+  top: 8rem;
+  left: 7rem;
+  font-size: 3rem;
+
+}
+
+.whatsapp {
+  position: absolute;
+  top: 52%;
+  left: 40%;
+
+}
+
+.phone{
+    position: absolute;
+  top: 57%;
+  left: 40%;
+
+}
+
+.email{
+    position: absolute;
+    top: 61%;
+  left: 40%;
+
+}
+
+.address{
+    position: absolute;
+    top: 67%;
+  left: 40%;
+}
+
+.box{
+    margin-left: auto;
+  margin-right: auto;
+
+    width: 30rem;
+
+    box-shadow:5px 10px 5px #888888;
+    position: relative;
+}
+</style>
+</head>
+<body>
+
+
+
+
+    <div class="box">
+        <img src="/static/cards/card1/2.jpg" alt="Snow" style="width:100%;">
+
+        <div class="name">{{card.fname}} {{card.lname}}</div>
+        <div class="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone={{card.phone}}&text=Hi Im interested">
+                whatsapp
+            </a>
+            
+        
+        </div>
+        <div class="phone">
+            <a href="tel:{{card.phone}}">
+            {{card.phone}}
+            </a>
+        </div>
+        <div class="email">
+            <a href="mailto:{{card.email}}?cc=meetyourvallabh@gmail.com, kaushalpp01@gmail.com, &bcc=lastemail@example.com&subject=Inquiry mail&body=Hi, I want to discuss something with you.">
+                {{card.email}}
+            </a>
+      
+        </div>
+
+        <div class="address">
+            <a href="https://goo.gl/maps/LjdTCH78JfcUw3DU6">
+                Address
+            </a>
+      
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+</html> 
+
